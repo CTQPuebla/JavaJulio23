@@ -1,0 +1,147 @@
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git
+$ git clone https://github.com/CTQPuebla/JavaJulio23.git
+Cloning into 'JavaJulio23'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git
+$ cd javajulio23
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (main)
+$  java checkout develop
+Error: no se ha encontrado o cargado la clase principal checkout
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (main)
+$ git branch ramaUno_jmc
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (main)
+$ git checkout ramaUno_jmc
+Switched to branch 'ramaUno_jmc'
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git status
+On branch ramaUno_jmc
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Jessica cortes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git status
+On branch ramaUno_jmc
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Jessica cortes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git commit-m"practica de git"
+git: 'commit-mpractica de git' is not a git command. See 'git --help'.
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git config --global user name Maleny2
+error: key does not contain a section: user
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git config -- global user.mail.maleni.corte@gmail.com
+error: key does not contain a section: global
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git commit-m"practica de git"               git: 'commit-mpractica de git' is not a git command. See 'git --help'.
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git add .
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git status
+On branch ramaUno_jmc
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Jessica cortes.txt
+
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git commit-m"practica de git"
+git: 'commit-mpractica de git' is not a git command. See 'git --help'.
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git commit -m "practica de git"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Jessica@DESKTOP-U5ELAR0.(none)')
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git config --global user.email maleni.corte93@gmail.com
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git config --global user.name Maleny2
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git commit -m "practica de git"
+[ramaUno_jmc 675feef] practica de git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Jessica cortes.txt
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git push
+fatal: The current branch ramaUno_jmc has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ramaUno_jmc
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git push --set-upstream origin ramaUno_jmc
+fatal: User cancelled dialog.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Username for 'https://github.com':
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Password for 'https://github.com':
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/CTQPuebla/JavaJulio23.git/'
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$ git push --set-upstream origin ramaUno_jmc
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 151.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ramaUno_jmc' on GitHub by visiting:
+remote:      https://github.com/CTQPuebla/JavaJulio23/pull/new/ramaUno_jmc
+remote:
+To https://github.com/CTQPuebla/JavaJulio23.git
+ * [new branch]      ramaUno_jmc -> ramaUno_jmc
+branch 'ramaUno_jmc' set up to track 'origin/ramaUno_jmc'.
+
+Jessica@DESKTOP-U5ELAR0 MINGW64 ~/Desktop/git/javajulio23 (ramaUno_jmc)
+$
