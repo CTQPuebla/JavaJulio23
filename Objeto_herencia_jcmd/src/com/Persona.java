@@ -56,5 +56,11 @@ public class Persona {
 		return "Persona [nombre=" + nombre + ", sexo=" + sexo + ", peso=" + peso + ", altura=" + altura + "]";
 	}
 	
+	public void hacerAlgo() {
+		System.out.println("estoy haceindo algo");
+		
+		
+		
+	}
 
 }

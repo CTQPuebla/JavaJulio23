@@ -7,6 +7,17 @@ public class Principal {
 		p.setPeso("75 kg");
 		
 		System.out.println(p);
+		
+		Empleado e = new Empleado();
+		
+		
+		
+		/*
+		 * Encapsulamiento
+		 * Modificadores de acceso
+		 * private , protected, public
+		 */
+		
 	}
 
 }
