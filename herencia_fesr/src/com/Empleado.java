@@ -1,6 +1,6 @@
 package com;
 
-public class Empleado extends Persona {
+public final class Empleado extends Persona {
 	String rfc;
 	String nss;
 	double salario;
