@@ -5,14 +5,12 @@ public class Principal {
      
 		
 		
-		Persona p=new Persona("Cristhian", "Masculino", "70.0 kg", "1.73");
-		
-		
-		
+		Persona p=new Persona("Cristhian", "Masculino", "70.0 kg");
 		p.setPeso("85");
+	    System.out.println(Persona.ALTURA_MAX);
 		System.out.println(p);
-		
 		Empleado e=new Empleado();
+		e.hacerAlgo();
 		
 	}
 }

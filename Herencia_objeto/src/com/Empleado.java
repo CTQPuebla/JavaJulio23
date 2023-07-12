@@ -63,5 +63,12 @@ public class Empleado extends Persona {
 		System.out.println("Hasta que no vean carne, mejor coman normal");
 	}
 	
+	@Override // cuando se aplica sobreescritura
+	public void hacerAlgo() {
+		
+		System.out.println("Estoy haciendo algo más........");
+		
+		
+	}
 	
 }
