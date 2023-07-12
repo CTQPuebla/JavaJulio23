@@ -6,6 +6,7 @@ public class Empleado extends Persona {
 	String nss;
 	Double salario;
 	String horario;
+	public static String AtributoA= "HOLA";
 	
 	public Empleado() {
 		
