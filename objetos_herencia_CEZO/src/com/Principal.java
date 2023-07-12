@@ -3,8 +3,11 @@ package com;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+	Persona p = new Persona("Laura","Femenino","52 kg", "1.65");
+	
+	Empleado e = new Empleado();
+	
+	
 	}
-
 }
