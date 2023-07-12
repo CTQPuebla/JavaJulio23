@@ -12,6 +12,13 @@ public class Principal {
 		Empleado e = new Empleado();
 		
 		
+		/*
+		 * Encapsulamiento
+		 * Modificadores de acceso:
+		 * private, protected, public
+		 */
+		
+		
 	}
 
 }
