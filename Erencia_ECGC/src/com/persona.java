@@ -1,6 +1,6 @@
 package com;
 
-public class persona {
+public final class persona {
 	
 	String nombre;
 	String sexo;
