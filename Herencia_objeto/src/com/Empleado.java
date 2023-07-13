@@ -12,8 +12,8 @@ public class Empleado extends Persona {
 	}
 
 	public Empleado(String nombre, String sexo, String peso, String altura, String rfc, String nss, double salario,
-			String horario) {
-		super(nombre, sexo, peso, altura);
+		String horario) {
+		super(nombre, sexo, peso);
 		this.rfc = rfc;
 		this.nss = nss;
 		this.salario = salario;
