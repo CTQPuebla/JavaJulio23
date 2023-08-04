@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.msempleados.impl.EmpleadoImplement;
 import com.persistence.entity.Empleados;
 import com.persistence.request.EmpleadoRequest;
-
 @RestController
 @RequestMapping("empleados/")
 public class EmpleadoController {
@@ -62,10 +61,4 @@ public class EmpleadoController {
 		String mensaje = service.eliminar(id);
 		return new ResponseEntity<String>(mensaje, HttpStatus.OK);
 	}
-	
-	
-	
-	
-	
-
 }

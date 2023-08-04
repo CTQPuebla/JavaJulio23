@@ -12,29 +12,28 @@ import com.persistence.request.EmpleadoRequest;
 
 @Service
 public class EmpleadoImplement implements EmpleadoService{
-	//Inyeccion de dependencias
+
+	
 	@Autowired
 	EmpleadoRepository repo;
 	
 	@Override
 	public Empleados guardar(EmpleadoRequest request) {
-		Empleados empleado = new Empleados();
+		Empleados empleado=new Empleados();
 		
+		empleado.setEmpleadoId(request.getEmpleadoId());
 		empleado.setNombre(request.getNombre());
-		empleado.setFechaIngreso(request.getFechaIngreso());
-		empleado.setSalario(request.getSalario());
-		
+		empleado.setFechaingreso(request.getFechaingreso());
 		repo.save(empleado);
 		return empleado;
 	}
 
 	@Override
 	public Empleados actualizar(EmpleadoRequest request) {
-		Empleados empleado = repo.findById(request.getEmpleadoId()).get();
-		
+		Empleados empleado=repo.findById(request.getEmpleadoId()).get();
+		empleado.setEmpleadoId(request.getEmpleadoId());
 		empleado.setNombre(request.getNombre());
-		empleado.setFechaIngreso(request.getFechaIngreso());
-		empleado.setSalario(request.getSalario());
+		empleado.setFechaingreso(request.getFechaingreso());
 		
 		repo.save(empleado);
 		return empleado;
@@ -49,13 +48,11 @@ public class EmpleadoImplement implements EmpleadoService{
 	@Override
 	public String eliminar(int id) {
 		repo.deleteById(id);
-		return "Eliminado";
+		return"Eliminado";
 	}
 
 	@Override
 	public List mostrar() {
-		// TODO Auto-generated method stub
 		return repo.findAll();
 	}
-
 }
