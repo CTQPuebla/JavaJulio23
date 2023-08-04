@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.msempleados.service.EmpleadoService;
-
 import com.persistence.entity.Empleados;
 import com.persistence.repository.EmpleadoRepository;
 import com.persistence.request.EmpleadoRequest;
@@ -18,9 +17,6 @@ public class EmpleadoImplement implements EmpleadoService{
 	@Autowired
 	EmpleadoRepository repo;
 	
-	
-	
-	
 	@Override
 	public Empleados guardar(EmpleadoRequest request) {
 		Empleados empleado=new Empleados();
@@ -28,8 +24,6 @@ public class EmpleadoImplement implements EmpleadoService{
 		empleado.setEmpleadoId(request.getEmpleadoId());
 		empleado.setNombre(request.getNombre());
 		empleado.setFechaingreso(request.getFechaingreso());
-		empleado.setSalario(request.getSalario());
-		
 		repo.save(empleado);
 		return empleado;
 	}
@@ -40,7 +34,6 @@ public class EmpleadoImplement implements EmpleadoService{
 		empleado.setEmpleadoId(request.getEmpleadoId());
 		empleado.setNombre(request.getNombre());
 		empleado.setFechaingreso(request.getFechaingreso());
-		empleado.setSalario(request.getSalario());
 		
 		repo.save(empleado);
 		return empleado;
@@ -48,8 +41,8 @@ public class EmpleadoImplement implements EmpleadoService{
 
 	@Override
 	public Empleados buscar(int id) {
-		
-	 return repo.findById(id).get();
+		// TODO Auto-generated method stub
+		return repo.findById(id).get();
 	}
 
 	@Override
@@ -62,9 +55,4 @@ public class EmpleadoImplement implements EmpleadoService{
 	public List mostrar() {
 		return repo.findAll();
 	}
-
-	
-
-	
 }
-

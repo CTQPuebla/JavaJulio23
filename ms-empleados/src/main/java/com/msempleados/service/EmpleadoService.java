@@ -7,6 +7,7 @@ import com.persistence.request.EmpleadoRequest;
 
 
 public interface EmpleadoService {
+
 	Empleados guardar(EmpleadoRequest request);
 	Empleados actualizar(EmpleadoRequest request);
 	Empleados buscar(int id);
